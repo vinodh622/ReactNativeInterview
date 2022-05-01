@@ -1,0 +1,11 @@
+export const PRODUCT_REQ= 'PRODUCT_REQ';
+export const PRODUCT_SUCCES= 'PRODUCT_SUCCES';
+export const PRODUCT_FAIL= 'PRODUCT_FAIL';
+
+
+export const PRODUCT_DEL_REQ= 'PRODUCT_DEL_REQ';
+export const PRODUCT_DEL_SUCCESS= 'PRODUCT_DEL_SUCCESS';
+export const PRODUCT_DFAIL= 'PRODUCT_DFAIL';
+
+export const CARTADD= 'CARTADD';
+
