@@ -21,7 +21,7 @@ function cartReducer(state = { cart: [], loading: true }, action) {
 
       const data = spreadData;
       let isexists = state.cart.find((e) => e._id === data._id);
-///code exelfwelfw[elv]
+///haaaaaascscscscscdvdsvdsvsd
       return {
         cart: isexists
           ? state.cart.map((e) =>
