@@ -10,8 +10,8 @@ const reducer = combineReducers ({
     productReducer:productReducer,
     
     cartReducer:cartReducer
-    
-//scsac zx zxas
+      
+//scsac zx zdvdvdvxas
 
 })
 
