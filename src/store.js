@@ -11,7 +11,7 @@ const reducer = combineReducers ({
     
     cartReducer:cartReducer
     
-//scsacas
+//scsac zx zxas
 
 })
 
