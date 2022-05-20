@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState ,PureComponent} from 'react'
 import {
   BrowserRouter  as 
   Router,
@@ -20,10 +20,14 @@ import Review from './Components/Review';
     <Router>
       <Routes >
         <Route path="/" element={<Home />} />
+
        <Route path="/Review" element={<Review />} />
 
       </Routes>
+      
     </Router>
+
+
 
   )
 }

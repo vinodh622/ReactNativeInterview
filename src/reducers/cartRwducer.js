@@ -1,15 +1,7 @@
-//  function productReducer (state={products:[]}, action,) {
-//     switch (action.type) {
 
-//         default:
-//            return state;
-//     }
-
-//  }
-//  export {productReducer};
 import { CARTADD } from "../actions/constants";
 
-function cartReducer(state = { cart: [], loading: true }, action) {
+function cartReducer(state = { cart: [], loading: true}, action) {
   switch (action.type) {
     ///console.log(action.payload.product)
 
@@ -23,6 +15,7 @@ function cartReducer(state = { cart: [], loading: true }, action) {
       let isexists = state.cart.find((e) => e._id === data._id);
 ///haaaaaascscscscscdvdsvdsvsd
       return {
+        ...state,
         cart: isexists
           ? state.cart.map((e) =>
               e._id === data._id
@@ -30,7 +23,14 @@ function cartReducer(state = { cart: [], loading: true }, action) {
                 : e
             )
           : [...state.cart, data],
+
+
+       test:state.cart.length
+
+
       };
+
+
 
     // case CARTADD:
     //   const io = action.payload;
