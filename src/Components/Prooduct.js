@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap'
 
 const Prooduct =({e ,tewdwdst}) =>{
 
-console.log('hai')
+console.log('hai') /// this is hai by inodh
 
 const functssion = () =>{
 // console.log("h687878")
