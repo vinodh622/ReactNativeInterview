@@ -14,10 +14,10 @@ export const getProducts = () => async (dispatch) => {
     dispatch({ type: PRODUCT_REQ });
 
     const axiosIntance = axios.create({
-      headers: {
-        bearer:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjhlYzFjNThhMTM5N2FkOWQ2Y2NhMyIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjUxOTI4NjA3LCJleHAiOjE2NTI1MzM0MDd9.R1ltRnqAWHQvED_sF1qQW96Tvf4nPnGrv8T-S9F8kqM",
-      },
+      // headers: {
+      //   bearer:
+      //     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjhlYzFjNThhMTM5N2FkOWQ2Y2NhMyIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjUxOTI4NjA3LCJleHAiOjE2NTI1MzM0MDd9.R1ltRnqAWHQvED_sF1qQW96Tvf4nPnGrv8T-S9F8kqM",
+      // },
     });
     axiosIntance.interceptors.response.use( (res) => {
       return res; }, (error) => { console.log(error, "haibababa")});

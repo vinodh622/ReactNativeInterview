@@ -1,18 +1,5 @@
 import React, { Fragment, useState, useEffect, useRef  ,useCallback} from 'react'
-// import Pagination from 'react-js-pagination'
-// import Slider from 'rc-slider'
-// import 'rc-slider/assets/index.css';
 
-// import MetaData from './layout/MetaData'
-// import Product from './product/Product'
-// import Loader from './layout/Loader'
-
-// import { useDispatch, useSelector } from 'react-redux'
-// import { useAlert } from 'react-alert';
-// import { getProducts } from '../actions/productActions'
-
-// const { createSliderWithTooltip } = Slider;
-// const Range = createSliderWithTooltip(Slider.Range)
 import { useDispatch ,useSelector} from 'react-redux'
 import {getProducts ,deleteProducts} from '../actions/Productaction'
 import {  useMatch ,useLocation ,useNavigate ,Link}  from 'react-router-dom'
@@ -70,7 +57,9 @@ const [dataCat,setdataCat]=useState([ ])
 
 
     const { products,loading }= productdata
-    const {cart ,test}= dwdwdw
+    const {cart ,test  ,hai}= dwdwdw
+
+    console.log("hai",hai)
 
     const[count,setcount]=useState(1)
 
@@ -84,7 +73,7 @@ const [dataCat,setdataCat]=useState([ ])
     dispatch(getProducts())
 
 
-   }, [test])
+   }, [])
 
 
 
@@ -108,6 +97,10 @@ dispatch(addCartact(e))
 
 
    }
+console.log(cart)
+
+
+
 
 let developer ={name:"vinoo"}
 let develope2={...developer}
@@ -116,22 +109,79 @@ develope2.name="xxxx"
 
 
 
+const obk = {
+name :"wdwd",
+testwcw:"wdjwdjqwojdoqp",
+qty:11
+
+
+}
+
+// lexail scope:
+let a =333
+
+function testq (){ /// own execution context
+
+console.log(a)
+
+}
+
+
+testq()
 
 
 
+function init() {
+  var name = 'Mozilla'; 
+//  console.log(uuuu)
+  // name is a local variable created by init
+  function displayName() { 
+    let uuuu ="qwdpjqwdjqod"
+    //alert(name); // use variable declared in the parent function
+  }
+  displayName();
+}
+init();
+
+// let spread = {...obk ,name:"xxxxs" ,qty:obk.qty+11
+// }
 
 
+// console.log(spread ,"psredas")
 
+const Employee = {
+  firstname:"vini",
+  lastName:"Mtest",
+  getfullanme: function (){
 
+console.log(`${this.firstname} ,"haiiiiiii"}`)
 
-
-
-
-
-
+  }
   
-  
-  
+  }
+
+  const Customer = {
+    firstname:"vnodhdon",
+    lastName:"Mtest",
+   
+    
+    }
+const {firstname ,lastName}=Customer
+
+console.log(firstname,"ho790097907")
+
+  Employee.getfullanme.bind(Customer)
+
+
+if(true){
+ let reee=555
+ console.log(reee,"dhqwodqpwodupqdupqdu")
+
+}
+
+
+
+
   
   
   
@@ -143,7 +193,6 @@ develope2.name="xxxx"
     
     try {
       let res=   await axios.get("https://jsonplaceholder.typcode.com/todos")
-console.log(res)
      
 if(res.status===200){
 
@@ -207,18 +256,23 @@ console.log(error)
     },
     
     {"id":123,
-    "price":442,
-    "Qty":12
+    "price":442.67,
+    "Qty":1
     },
       
     {"id":12344,
-    "price":4444442,
-    "Qty":12333
+    "price":44.5,
+    "Qty":1
     }
     
     ]
     
-    
+
+
+    let ui  = arr.reduce((a,c)=> a+ c.price*c.Qty ,0)
+
+   // console.log("total",ui.toFixed(2))
+
 
     let ass =[]
   
@@ -282,6 +336,19 @@ return ()=>{
 
 
 
+function myfunc(){
+
+console.log(this);
+}
+let obnn ={
+  name:"vinofhhf"
+}
+myfunc =myfunc.bind(obnn)
+
+
+
+myfunc();
+
 
 
 
@@ -329,6 +396,34 @@ const tewdwdst = useCallback(()=>{
 
 
 },[count])  
+
+
+
+console.log(curry(11)(12)());   
+
+
+
+function curry(a){
+
+return function(b){
+
+ if( b!==undefined){
+  return curry(a+b)
+
+ }  
+else {
+  return a;
+}
+
+
+}
+
+
+  
+  }
+
+
+
 
 
 

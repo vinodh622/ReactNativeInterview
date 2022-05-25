@@ -5,13 +5,18 @@ const Age = ({ countage, rating }) => {
 
   console.log("98898889088909880809");
 
+const eef = ()=>{
+
+console.log("why?????")
+}
+
 
   return (
     <div>
 
       <h1>{rating}</h1>
 
-      <Button onClick={countage}>agees</Button>
+      <Button onClick={()=>eef()}>agees</Button>
 
 
     </div>

@@ -5,10 +5,12 @@ import { Button } from 'react-bootstrap'
 
 const Prooduct =({e ,tewdwdst}) =>{
 
-console.log('hai') /// this is hai by inodh
+//console.log('hai pr') /// this is hai by inodh
 
 const functssion = () =>{
-// console.log("h687878")
+
+//console.log("h687878")
+
 }
 
 
@@ -30,4 +32,4 @@ const functssion = () =>{
     
 };
 
-export default Prooduct;
+export default  React.memo(Prooduct)  ;
