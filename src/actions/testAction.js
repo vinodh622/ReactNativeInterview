@@ -5,7 +5,7 @@ try {
     
 } catch (error) {
     
-    
+    console.log(error)//ooooooo erororoorrfprfp]rp
 }
 
 
