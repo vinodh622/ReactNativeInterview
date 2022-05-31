@@ -11,7 +11,7 @@ import {
 
 
 import Home from './Components/Home'
-import Review from './Components/Review';
+
 
  const App = () => {
   return (
@@ -21,7 +21,7 @@ import Review from './Components/Review';
       <Routes >
         <Route path="/" element={<Home />} />
 
-       <Route path="/Review" element={<Review />} />
+       
 
       </Routes>
       
